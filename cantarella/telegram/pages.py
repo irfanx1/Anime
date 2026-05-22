@@ -230,7 +230,7 @@ async def post_to_main_channel(client: Client, anime_url: str, uploaded_messages
                 invite_link = await client.export_chat_invite_link(mapped_channel_id_int)
                 mapped_channel_link = invite_link
 
-            main_buttons = [[InlineKeyboardButton("📥 Download", url=mapped_channel_link)]]
+            main_buttons = [[InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴡᴀᴛᴄʜ •", url=mapped_channel_link)]]
 
             await client.send_photo(
                 chat_id=int(MAIN_CHANNEL),
