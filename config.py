@@ -22,8 +22,8 @@ FSUB_LINK_EXPIRY = int(os.environ.get("FSUB_LINK_EXPIRY", 600))
 START_PIC =os.environ.get("START_PIC", "https://files.catbox.moe/4b8jvw.jpg")
 
 # ─── Filename & Caption Formats ───
-FORMAT = os.environ.get("FORMAT", "<i>[S{season}-E{episode}] {title} [{quality}] [{audio}]</i>")
-CAPTION = os.environ.get("CAPTION", "[ @Anime_Rage_Official {FORMAT}]")
+FORMAT = os.environ.get("FORMAT", "[S{season}-E{episode}] {title} [{quality}] [{audio}] @Anime_Rage_official")
+CAPTION = os.environ.get("CAPTION", "[{FORMAT}]")
 
 # ─── Progress Bar Settings ───
 PROGRESS_BAR = os.environ.get("PROGRESS_BAR", """
