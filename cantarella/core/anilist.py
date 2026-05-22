@@ -51,18 +51,15 @@ def clean_synopsis(description: str, max_chars: int = 350) -> str:
     return text
 
 CAPTION_FORMAT = """
-<blockquote><b>◆ {title} ◆</b></blockquote>
-<b>✦━━━━━━━━━━━━━━━━━━━━━━━━✦</b>
-<blockquote><i>➥ Sᴇᴀsᴏɴ:- {anime_season}
-➥ Eᴘɪsᴏᴅᴇ:- {ep_no}
-➥ Sᴛᴀᴛᴜs:- {status}
-➥ Gᴇɴʀᴇs:- {genres}
-➥ Aᴜᴅɪᴏ:- {audio}</i></blockquote>
-<b>✦━━━━━━━━━━━━━━━━━━━━━━━━✦</b>
-<blockquote><b>📖 Synopsis:</b>
-<i>{synopsis}</i></blockquote>
-<b>✦━━━━━━━━━━━━━━━━━━━━━━━━✦</b>
-<b><i>⌬ Pᴏᴡᴇʀᴇᴅ ʙʏ:- @cantarellabots</i></b>
+<blockquote><b>〄 {title} </b></blockquote>
+<b>╭━━━━━━━━━━━━━━━━━━━━━━
+<b>➣ Sᴛᴀᴛᴜs: {status}</b>
+<b>➣ Sᴇᴀsᴏɴ: {anime_season}</b>
+<b>➣ Eᴘɪsᴏᴅᴇ: {ep_no}</b>
+<b>➣ Aᴜᴅɪᴏ: {audio}</b>
+<b>➣ Qᴜᴀʟɪᴛʏ: 480ᴘ, 720ᴘ, 1080ᴘ</b>
+<b>╰━━━━━━━━━━━━━━━━━━━━━━
+<blockquote><b>≡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Anime_Rage_Official'>𝐀ɴɪᴍᴇ 𝐑ᴀɢᴇ</a></b></blockquote>
 """
 
 GENRES_EMOJI = {
