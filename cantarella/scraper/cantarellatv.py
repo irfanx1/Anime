@@ -249,7 +249,7 @@ class cantarellatvDownloader:
         if quality == "all":
             # If all qualities are requested, download each one sequentially
             success = True
-            for q in ["360", "720", "1080"]:
+            for q in ["480", "720", "1080"]:
                 if not self._download_with_retry(url, quality=q, name_override=name_override, season_override=season_override, ep_num_override=ep_num_override):
                     success = False
             return success
@@ -297,7 +297,7 @@ class cantarellatvDownloader:
         elif all_data.get('dub'):
              audio = "EN"
 
-        qual_str = quality if quality in ["360", "720", "1080"] else "auto"
+        qual_str = quality if quality in ["480", "720", "1080"] else "auto"
 
         # Sanitize filename to prevent WinError 123
         def sanitize(name):
@@ -357,8 +357,8 @@ class cantarellatvDownloader:
                 cmd.extend(["-sv", "res='1080':for=best"])
             elif quality == "720":
                 cmd.extend(["-sv", "res='720':for=best"])
-            elif quality == "360":
-                cmd.extend(["-sv", "res='360':for=best"])
+            elif quality == "480":
+                cmd.extend(["-sv", "res='480':for=best"])
             else:
                 cmd.extend(["--auto-select"])
 
