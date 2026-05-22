@@ -322,7 +322,7 @@ async def check_and_download_ongoing(client: Client, chat_id: int):
             status_msg = await client.send_message(log_id, f"<blockquote>🔄 ᴀᴜᴛᴏ-ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ɴᴇᴡ ᴇᴘɪꜱᴏᴅᴇ: {anime_name_sc} - ꜱ{ani_season}ᴇ{ani_ep_num}...</blockquote>", parse_mode=ParseMode.HTML)
 
             # Use the existing download logic (downloading to TARGET_CHAT_ID)
-            # quality="all" will download 360p, 720p, 1080p sequentially
+            # quality="all" will download 480p, 720p, 1080p sequentially
             # Pass message=None so _handle_download doesn't try to send user-side progress
             uploaded_msgs, _ = await _handle_download(
                 client, None, ep_url, status_msg,
