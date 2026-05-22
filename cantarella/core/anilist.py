@@ -59,7 +59,7 @@ CAPTION_FORMAT = """
 <b>➣ Aᴜᴅɪᴏ: {audio}</b>
 <b>➣ Qᴜᴀʟɪᴛʏ: 480ᴘ, 720ᴘ, 1080ᴘ</b>
 <b>╰━━━━━━━━━━━━━━━━━━━━━━
-<blockquote><b>≡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Anime_Rage_Official'>𝐀ɴɪᴍᴇ 𝐑ᴀɢᴇ</a></b></blockquote>
+<blockquote><b>≡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Zenkai_Network'>𝐙ᴇɴᴋᴀɪ 𝐍ᴇᴛᴡᴏʀᴋ</a></b></blockquote>
 """
 
 GENRES_EMOJI = {
