@@ -68,7 +68,7 @@ async def cb_start(client: Client, callback_query):
 @Client.on_callback_query(filters.regex("^about$"))
 async def cb_about(client: Client, callback_query):
     await callback_query.edit_message_media(
-        InputMediaPhoto("https://files.catbox.moe/is7q4q.jpg", Dead.ABOUT_TXT),
+        InputMediaPhoto("https://ibb.co/4w7hdc58", Dead.ABOUT_TXT),
         reply_markup=InlineKeyboardMarkup([
             [
                 InlineKeyboardButton("⬅️ ʙᴀᴄᴋ",  callback_data="start"),
@@ -82,7 +82,7 @@ async def cb_about(client: Client, callback_query):
 async def cb_help(client: Client, callback_query):
     await callback_query.edit_message_media(
         InputMediaPhoto(
-            "https://envs.sh/Wdj.jpg",
+            "https://ibb.co/4ZPStn7Q",
             Dead.HELP_TXT.format(
                 first    = callback_query.from_user.first_name,
                 last     = callback_query.from_user.last_name or "",
