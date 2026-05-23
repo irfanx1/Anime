@@ -19,7 +19,7 @@ ADMIN_URL = os.environ.get("ADMIN_URL", "@SubaruXnatsuki")
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Sasuke_Rage_Bot")
 FSUB_PIC = os.environ.get("FSUB_PIC", "https://files.catbox.moe/bli70r.jpg")
 FSUB_LINK_EXPIRY = int(os.environ.get("FSUB_LINK_EXPIRY", 600))
-START_PIC =os.environ.get("START_PIC", "https://files.catbox.moe/4b8jvw.jpg")
+START_PIC =os.environ.get("START_PIC", "https://ibb.co/mCDb1CxR")
 
 # ─── Filename & Caption Formats ───
 FORMAT = os.environ.get("FORMAT", "S{season}-{episode}] {title} [{quality}] [{audio}] @Anime_Rage_official.mkv")
