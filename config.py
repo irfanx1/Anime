@@ -17,7 +17,7 @@ MONGO_NAME = os.environ.get("MONGO_NAME", "Sasuke")
 OWNER_ID = int(os.environ.get("OWNER_ID", "8180269769"))
 ADMIN_URL = os.environ.get("ADMIN_URL", "@SubaruXnatsuki")
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Sasuke_Rage_Bot")
-FSUB_PIC = os.environ.get("FSUB_PIC", "https://files.catbox.moe/bli70r.jpg")
+FSUB_PIC = os.environ.get("FSUB_PIC", "https://ibb.co/mCDb1CxR")
 FSUB_LINK_EXPIRY = int(os.environ.get("FSUB_LINK_EXPIRY", 600))
 START_PIC =os.environ.get("START_PIC", "https://ibb.co/mCDb1CxR")
 
@@ -36,10 +36,6 @@ PROGRESS_BAR = os.environ.get("PROGRESS_BAR", """
 # ─── Response Images ───
 # Rotating anime images sent with every bot reply. Add as many as you like.
 RESPONSE_IMAGES = [
-    "https://files.catbox.moe/5oonsm.jpg",
-    "https://files.catbox.moe/9ufgme.jpg",
-    "https://files.catbox.moe/4b8jvw.jpg",
-    "https://files.catbox.moe/bli70r.jpg",
-    "https://files.catbox.moe/uce0lw.jpg",
-    "https://files.catbox.moe/is7q4q.jpg"
+    "https://ibb.co/WWBhtS9R",
+    "https://ibb.co/WWBhtS9R"
 ]
