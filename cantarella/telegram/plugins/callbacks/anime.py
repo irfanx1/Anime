@@ -263,7 +263,7 @@ async def show_range_quality_selection(client, message, start, end, edit=False, 
 
     buttons = [
         [
-            InlineKeyboardButton(btn("360", "𝟰𝟴𝟬ᴘ"), callback_data="trq_360"),
+            InlineKeyboardButton(btn("480", "𝟰𝟴𝟬ᴘ"), callback_data="trq_360"),
             InlineKeyboardButton(btn("720", "𝟳𝟮𝟬ᴘ"), callback_data="trq_720"),
             InlineKeyboardButton(btn("1080", "𝟭𝟬𝟴𝟬ᴘ"), callback_data="trq_1080")
         ],
@@ -431,7 +431,7 @@ async def on_episode_select(client: Client, callback_query):
     page = ep_idx // 20
     buttons = [
         [
-            InlineKeyboardButton("360ᴘ",  callback_data=f"dl_360_{ep_idx}"),
+            InlineKeyboardButton("480ᴘ",  callback_data=f"dl_360_{ep_idx}"),
             InlineKeyboardButton("720ᴘ",  callback_data=f"dl_720_{ep_idx}"),
             InlineKeyboardButton("1080ᴘ", callback_data=f"dl_1080_{ep_idx}")
         ],
