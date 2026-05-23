@@ -96,7 +96,7 @@ async def on_start_batch_dl(client: Client, callback_query):
     await callback_query.answer(f"📥 ꜱᴛᴀʀᴛɪɴɢ ʙᴀᴛᴄʜ ᴅᴏᴡɴʟᴏᴀᴅ ꜰᴏʀ {len(episodes)} ᴇᴘɪꜱᴏᴅᴇꜱ...")
     await callback_query.message.delete()
 
-    quality_priority = {"480": 1, "720": 2, "1080": 3, "auto": 4}
+    quality_priority = {"360": 1, "720": 2, "1080": 3, "auto": 4}
     selected_qualities.sort(key=lambda q: quality_priority.get(q, 99))
 
     target_chat = int(TARGET_CHAT_ID) if TARGET_CHAT_ID else callback_query.message.chat.id
