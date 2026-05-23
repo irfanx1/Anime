@@ -41,9 +41,9 @@ async def show_quality_selection(client: Client, callback_query):
 
     buttons = [
         [
-            InlineKeyboardButton(btn("360",  "360ᴘ"),          callback_data="tq_360"),
-            InlineKeyboardButton(btn("720",  "720ᴘ"),          callback_data="tq_720"),
-            InlineKeyboardButton(btn("1080", "1080ᴘ"),         callback_data="tq_1080")
+            InlineKeyboardButton(btn("360",  "𝟯𝟲𝟬ᴘ"),          callback_data="tq_360"),
+            InlineKeyboardButton(btn("720",  "𝟳𝟮𝟬ᴘ"),          callback_data="tq_720"),
+            InlineKeyboardButton(btn("1080", "𝟭𝟬𝟴𝟬ᴘ"),         callback_data="tq_1080")
         ],
         [InlineKeyboardButton(btn("auto", "ᴀᴜᴛᴏ (ʙᴇꜱᴛ)"),    callback_data="tq_auto")],
         [
