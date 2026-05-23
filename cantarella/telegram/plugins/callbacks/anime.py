@@ -263,7 +263,7 @@ async def show_range_quality_selection(client, message, start, end, edit=False, 
 
     buttons = [
         [
-            InlineKeyboardButton(btn("360", "𝟯𝟲𝟬ᴘ"), callback_data="trq_360"),
+            InlineKeyboardButton(btn("360", "𝟰𝟴𝟬ᴘ"), callback_data="trq_360"),
             InlineKeyboardButton(btn("720", "𝟳𝟮𝟬ᴘ"), callback_data="trq_720"),
             InlineKeyboardButton(btn("1080", "𝟭𝟬𝟴𝟬ᴘ"), callback_data="trq_1080")
         ],
