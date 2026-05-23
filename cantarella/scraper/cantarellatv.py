@@ -357,8 +357,8 @@ class cantarellatvDownloader:
                 cmd.extend(["-sv", "res='1080':for=best"])
             elif quality == "720":
                 cmd.extend(["-sv", "res='720':for=best"])
-            elif quality == "480":
-                cmd.extend(["-sv", "res='480':for=worst"])
+            elif quality == "360":
+                cmd.extend(["-sv", "res='360':for=best"])
             else:
                 cmd.extend(["--auto-select"])
 
