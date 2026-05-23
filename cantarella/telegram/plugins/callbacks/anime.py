@@ -359,7 +359,7 @@ async def on_start_range_dl(client: Client, callback_query):
         parse_mode=ParseMode.HTML
     )
 
-    quality_priority = {"480": 1, "720": 2, "1080": 3, "auto": 4}
+    quality_priority = {"360": 1, "720": 2, "1080": 3, "auto": 4}
     qualities.sort(key=lambda q: quality_priority.get(q, 99))
 
     chunk_size = 25
