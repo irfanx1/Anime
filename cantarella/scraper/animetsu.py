@@ -12,6 +12,7 @@ class AnimetsuScraper:
     BASE_URL = "https://animetsu.live"
     API_URL = f"{BASE_URL}/v2/api"
     PROXY_URL = "https://swiftstream.top/proxy" # Fallback if need_proxy is true
+    VPS_PROXY = "http://ucwronij:alp2noubwaah@38.154.185.97:6370"
 
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -27,9 +28,12 @@ class AnimetsuScraper:
         self.binary_path = self._get_binary_path()
         self.proxy = get_random_proxy()
         self.session = c_requests.Session()
-        proxy_dict = get_proxy_dict(self.proxy)
-        if proxy_dict:
-            self.session.proxies.update(proxy_dict)
+        
+        # Route all session traffic through your VPS bypass proxy to prevent IP restrictions
+        self.session.proxies.update({
+            "http": self.VPS_PROXY,
+            "https": self.VPS_PROXY
+        })
 
     def _get_binary_path(self):
         candidates = [
@@ -283,7 +287,9 @@ class AnimetsuScraper:
                 "--download-retry-count", "5",
                 "--auto-select"
             ]
-            if self.proxy: cmd.extend(["--custom-proxy", self.proxy])
+            # Use your custom VPS proxy for segment downloads as well to prevent download speed limits or errors
+            if self.VPS_PROXY: 
+                cmd.extend(["--custom-proxy", self.VPS_PROXY])
 
             process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, bufsize=0)
             while True:
