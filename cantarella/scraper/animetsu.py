@@ -12,7 +12,7 @@ class AnimetsuScraper:
     BASE_URL = "https://animetsu.live"
     API_URL = f"{BASE_URL}/v2/api"
     PROXY_URL = "https://swiftstream.top/proxy" # Fallback if need_proxy is true
-    VPS_PROXY = "http://ucwronij:alp2noubwaah@209.127.138.10:5784"
+    VPS_PROXY = "http://elwzgjtj:6mrq0ske3jp9@191.96.254.138:6185"
 
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
