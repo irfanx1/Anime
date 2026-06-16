@@ -12,7 +12,7 @@ class AnimetsuScraper:
     BASE_URL = "https://animetsu.live"
     API_URL = f"{BASE_URL}/v2/api"
     PROXY_URL = "https://swiftstream.top/proxy" # Fallback if need_proxy is true
-    VPS_PROXY = "http://elwzgjtj:6mrq0ske3jp9@194.39.32.164:6461"
+    TOR_PROXY = "socks5://127.0.0.1:9050"
 
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -28,11 +28,9 @@ class AnimetsuScraper:
         self.binary_path = self._get_binary_path()
         self.proxy = get_random_proxy()
         self.session = c_requests.Session()
-        
-        # Route all session traffic through your VPS bypass proxy to prevent IP restrictions
         self.session.proxies.update({
-            "http": self.VPS_PROXY,
-            "https": self.VPS_PROXY
+            "http": self.TOR_PROXY,
+            "https": self.TOR_PROXY
         })
 
     def _get_binary_path(self):
